@@ -1,19 +1,16 @@
-# my-site
+个人博客（2022.03 – 2022.04）
 
-## Project setup
-```
-npm install
-```
+项目描述：项目采用组件化开发模式，实现了首页，文章列表页，文章详情页以及评论等页面。本人参与所有组件的开发
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+项目实现：
 
-### Compiles and minifies for production
-```
-npm run build
-```
+	使用vue/cli进行项目的工程搭建，使用Vue-route实现页面跳转，使用Vuex状态管理库进行数据共享，使用二次封装的Axios异步请求数据；使用Mock模拟项目所需要的数据；使用Less完成css样式
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+	使用mixins混入技术降低项目中代码冗余度，配置事件总线提升组件间通信效率
+
+	在登陆注册功能中应用vuex同时配合vue-router的路由守卫对用户访问进行权限鉴定
+
+	封装防抖和节流函数，以及自定义指令v-lazy实现图片懒加载，提升用户体验和代码执行效率
+
+技术栈： Vue + Vue-router + Vuex + Axios + Less
+
